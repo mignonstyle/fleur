@@ -22,7 +22,6 @@
         ],
         "test": [
             "php vendor/bin/phpcs -p -s -v -n . --standard=./rulesets/phpcs.ruleset.xml --extensions=php"
-
         ]
     }
 }
