@@ -1,18 +1,11 @@
 {
-  /*
-  * JSHint Docs http://jshint.com/docs/
-  */
-
-  // Enforcing
   "indent"  : 4,
   "undef"   : true,
   "unused"  : true,
 
-  // Relaxing
   "debug"   : true,
-  "sub": true,
+  "sub"     : true,
 
-  // Environments
   "browser" : true,
   "devel"   : true,
   "node"    : true
