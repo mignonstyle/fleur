@@ -2,4 +2,9 @@
 /**
  * File name inddex.php
  */
-echo 'Hello World';
+
+class Main {
+	function _construct() {
+		echo 'hoge';
+	}
+}
