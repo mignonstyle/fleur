@@ -4,7 +4,6 @@
   "unused"  : true,
 
   "debug"   : true,
-  "sub"     : true,
 
   "browser" : true,
   "devel"   : true,
