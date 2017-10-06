@@ -44,8 +44,7 @@ cache:
 
 # Grab the setup script and execute.
 before_script:
-    # bash ./.bin/setup.sh
-    - composer install
+    bash ./.bin/setup.sh
 
 # Run test script commands.
 # Default is specific to project language.
