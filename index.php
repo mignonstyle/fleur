@@ -1,6 +1,6 @@
 <?php
 /**
- * File name inddex.php
+ * File name index.php
  */
 
 class Main {
