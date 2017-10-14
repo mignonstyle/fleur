@@ -31,8 +31,10 @@
 		) ); ?>
 
 		<?php
-		// Displays page-links for paginated posts. <!--nextpage--> tags.
-		get_template_part( 'template-parts/navigation/pagination', 'page' );
+		if ( is_single() ) {
+			// Displays page-links for paginated posts. <!--nextpage--> tags.
+			get_template_part( 'template-parts/navigation/pagination', 'page' );
+		}
 		?>
 
 		<?php get_template_part( 'template-parts/post/entry', 'footer' ); ?>
