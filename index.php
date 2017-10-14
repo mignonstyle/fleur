@@ -10,8 +10,8 @@
 get_header(); ?>
 
 <div class="l-wrap">
-	<div id="primary" class="l-content-area">
-		<main id="main" class="l-site-main" role="main">
+	<div id="primary" class="l-content__area">
+		<main id="main" class="l-site__main" role="main">
 
 			<?php if ( have_posts() ) :
 
