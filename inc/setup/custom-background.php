@@ -9,6 +9,8 @@
 
 /**
  * Set up the WordPress core custom background feature.
+ *
+ * @link https://developer.wordpress.org/reference/functions/add_theme_support/#custom-background
  */
 function fleur_custom_background_setup_theme() {
 	// Custom background default settings.
