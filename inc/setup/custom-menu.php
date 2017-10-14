@@ -9,6 +9,8 @@
 
 /**
  * This theme uses wp_nav_menu().
+ *
+ * @link https://codex.wordpress.org/Function_Reference/register_nav_menus
  */
 function fleur_custom_menu_setup() {
 	register_nav_menus( array(
