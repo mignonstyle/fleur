@@ -9,7 +9,7 @@
 
 if ( is_active_sidebar( 'content-top-widget-area' ) && is_single() ) : ?>
 
-	<div class="c-content-widget__top">
+	<div class="c-content-widget c-content-widget__top">
 		<?php dynamic_sidebar( 'content-top-widget-area' ); ?>
 	</div><!-- /.c-content-widget__top --->
 
