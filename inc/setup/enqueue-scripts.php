@@ -78,7 +78,7 @@ function fleur_enqueue_scripts() {
 	wp_enqueue_style( 'fleur-google-fonts', fleur_fonts_url(), array(), null );
 
 	// font-awesome.
-	wp_enqueue_style( 'fleur-font-awesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css', array() );
+	wp_enqueue_style( 'fleur-font-awesome', get_template_directory_uri() . '/assets/packages/font-awesome/css/font-awesome.min.css', array() );
 
 	// Theme stylesheet.
 	wp_enqueue_style( 'fleur-style', get_template_directory_uri() . '/style.css', array(), $version );
