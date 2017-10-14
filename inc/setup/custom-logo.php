@@ -9,6 +9,8 @@
 
 /**
  * Set up the WordPress core custom logo.
+ *
+ * @link https://developer.wordpress.org/reference/functions/add_theme_support/#custom-logo
  */
 function fleur_custom_logo_setup() {
 	// Custom logo default settings.
