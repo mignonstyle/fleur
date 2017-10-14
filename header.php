@@ -40,7 +40,7 @@
 			// Display global navigation.
 			get_template_part( 'template-parts/navigation/menu', 'global' );
 		} ?>
-	</header><!-- #masthead -->
+	</header><!-- /#masthead -->
 
 	<?php
 	if ( ! fleur_is_frontpage() ) {
