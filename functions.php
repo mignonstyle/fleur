@@ -7,8 +7,8 @@
  * @version   1.0
  */
 
- /**
- * Sets up theme defaults and registers support
+/**
+ * Sets up theme defaults and registers support.
  */
 function fleur_setup() {
 	// Make theme available for translation. Translations can be filed in the /languages/ directory.
