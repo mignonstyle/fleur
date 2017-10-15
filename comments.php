@@ -12,7 +12,7 @@
  * the visitor has not yet entered the password we will
  * return early without loading the comments.
  */
-if ( post_password_required() ) {
+if ( post_password_required() || ! ( comments_open() || get_comments_number() ) ) {
 	return;
 }
 ?>
@@ -81,9 +81,7 @@ if ( post_password_required() ) {
 			</div><!-- /.c-pings__area -->
 		<?php endif; ?>
 
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
-			<?php get_template_part( 'template-parts/navigation/pagination', 'comments' ); ?>
-		<?php endif; ?>
+		<?php get_template_part( 'template-parts/navigation/pagination', 'comments' ); ?>
 
 	<?php endif; ?>
 

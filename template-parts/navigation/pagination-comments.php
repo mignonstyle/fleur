@@ -7,6 +7,10 @@
  * @version   1.0
  */
 
+if ( 1 >= get_comment_pages_count() || ( ! get_option( 'page_comments' ) ) ) {
+	return;
+}
+
 $prev_icon = '<i class="fa fa-angle-left" aria-hidden="true"></i>';
 $next_icon = '<i class="fa fa-angle-right" aria-hidden="true"></i>';
 
