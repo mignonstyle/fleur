@@ -67,10 +67,6 @@ if ( post_password_required() ) {
 			</div><!-- /.c-comments-area -->
 		<?php endif; ?>
 
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
-			<?php get_template_part( 'template-parts/navigation/pagination', 'comments' ); ?>
-		<?php endif; ?>
-
 		<?php if ( $pings_count > 0 ) : ?>
 			<div class="c-pings__area">
 				<ol id="ping-list" class="c-comments-area__list c-pings-list">
@@ -85,14 +81,20 @@ if ( post_password_required() ) {
 			</div><!-- /.c-pings__area -->
 		<?php endif; ?>
 
+		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
+			<?php get_template_part( 'template-parts/navigation/pagination', 'comments' ); ?>
+		<?php endif; ?>
+
+	<?php endif; ?>
+
+	<?php if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
+		<?php fleur_comment_closed(); ?>
 	<?php endif; ?>
 
 	<?php if ( comments_open() ) : ?>
 		<div id="respond" class="c-comments__form">
 			<?php comment_form(); ?>
 		</div>
-	<?php else : ?>
-		<?php fleur_comment_closed(); ?>
 	<?php endif; ?>
 
 </aside><!-- #comments -->
