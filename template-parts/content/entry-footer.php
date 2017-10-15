@@ -9,10 +9,12 @@
 
 ?>
 
-<?php if ( is_single() ) : ?>
+<?php if ( is_singular() ) : ?>
 	<footer class="c-entry__footer">
 		<ul class="c-entry-footer__lists">
-			<li class="c-entry-footer__list"><?php fleur_entry_meta_tags(); ?></li>
+			<?php if ( ! is_page() ) : ?>
+				<li class="c-entry-footer__list"><?php fleur_entry_meta_tags(); ?></li>
+			<?php endif; ?>
 			<li class="c-entry-footer__list"><?php fleur_edit_link(); ?></li>
 		</ul><!-- /.c-entry-footer__lists -->
 	</footer><!-- /.c-entry__footer -->

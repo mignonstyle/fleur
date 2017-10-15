@@ -9,7 +9,7 @@
 
 ?>
 
-<?php if ( is_single() ) : ?>
+<?php if ( is_singular() ) : ?>
 	<div class="c-entry__meta">
 		<ul class="c-entry-meta__lists">
 			<li class="c-entry-meta__list"><?php fleur_entry_meta_date(); ?></li>
