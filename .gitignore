@@ -3,8 +3,9 @@
 # version: 1.0
 
 # Exclude any PSD/AI source
-#*.psd
-#*.ai
+*.psd
+*.ai
+_design
 
 # composer
 composer.phar
