@@ -18,7 +18,7 @@ get_header(); ?>
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
 
-					get_template_part( 'template-parts/post/content' );
+					get_template_part( 'template-parts/content/content' );
 
 				endwhile;
 
@@ -27,7 +27,7 @@ get_header(); ?>
 
 			else :
 
-				get_template_part( 'template-parts/post/content', 'none' );
+				get_template_part( 'template-parts/content/content', 'none' );
 
 			endif;
 			?>
